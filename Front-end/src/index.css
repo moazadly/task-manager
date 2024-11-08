@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+.lists {
+  max-height: 83vh;
+}
+.lists .todo .header,
+.lists .done .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+  width: calc(100% + 4px);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  margin-bottom: 10px;
+}
+.break-word {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+li {
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px;
+  padding: 8px 0px 6px 6px;
+  border-radius: 3px;
+}
+li:hover {
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+
+p,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.lists .todo .tasks-title {
+  background-color: #ffe2dd;
+  margin-left: -2px;
+  width: fit-content;
+  border-radius: 4px;
+  margin-top: auto;
+  padding: 5px 8px;
+  font-size: 1rem;
+}
+.lists .done .tasks-title {
+  background-color: #dbeddb;
+  margin-left: -2px;
+  width: fit-content;
+  border-radius: 4px;
+  margin-top: auto;
+  padding: 5px 5px;
+  font-size: 1rem;
+}
+.form {
+  box-shadow: rgb(15 15 15 / 20%) 3px 4px 10px 2px;
+  position: relative;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 10000;
+  transition: left 0.4s ease;
+}
+.left-0 {
+  left: 0;
+}
+.left-6 {
+  left: 1650px;
+}
+
+.search-animation {
+  margin-left: 100%;
+}
